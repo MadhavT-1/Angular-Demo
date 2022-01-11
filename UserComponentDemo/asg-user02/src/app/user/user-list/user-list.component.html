@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
   <table border="1">
     <tr>
       <th>ID</th>
@@ -9,4 +9,14 @@
       <td>{{user.name}}</td>
   </table>
 
+</div> -->
+<div class="row">
+  <div class="col-sm-3">
+    <div class="card border-success mb-3" style="width: 18rem;" *ngFor="let user of users">
+      <div class="card-body text-success">
+        <h5 class="card-title"> {{user.id}}</h5>
+        <p class="card-text"> {{user.name}}</p>
+      </div>
+    </div>
+  </div>
 </div>
